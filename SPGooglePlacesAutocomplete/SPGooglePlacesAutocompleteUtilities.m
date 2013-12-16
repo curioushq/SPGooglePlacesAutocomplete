@@ -9,8 +9,8 @@
 #import "SPGooglePlacesAutocompleteUtilities.h"
 
 @implementation NSArray(SPFoundationAdditions)
-- (id)onlyObject {
-    return [self count] == 1 ? self[0] : nil;
+- (id)firstValidObject {
+    return [self count] > 0 ? [self firstObject] : nil;
 }
 @end
 

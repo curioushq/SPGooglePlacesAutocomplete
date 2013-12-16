@@ -26,5 +26,5 @@ extern NSString *SPPlaceTypeStringForPlaceType(SPGooglePlacesAutocompletePlaceTy
 extern BOOL SPIsEmptyString(NSString *string);
 
 @interface NSArray(SPFoundationAdditions)
-- (id)onlyObject;
+- (id)firstValidObject;
 @end
